@@ -8,47 +8,49 @@
 <body>
     <h1>Hotel Booking</h1>
     <form action="">
-        <label for="name">Name:</label></br>
-        <input id="name" type="text" placeholder="first name">
-        <input id="name" type="text" placeholder="last name"><br></br>
+        <label for="fname">Name:</label><br>
+        <input id="fname" type="text" name="fname" placeholder="first name">
+        <input id="lname" type="text" name="lname" placeholder="last name"><br><br>
 
-        <label for="">Gender:</label>
+        <label >Gender:</label>
         <input name="gender" type="radio" value="Male">Male
-        <input name="gender" type="radio" value="Female">Female</br></br>
+        <input name="gender" type="radio" value="Female">Female<br><br>
 
-        <label for="email">Email:</label></br>
-        <input id="email" type="email" placeholder="email@email.com"></br></br>
-
-        <label for="room">Room Type</label></br>
-        <select name="room" id="">
+        <label for="email">Email:</label><br>
+        <input id="email" type="email" name="email" placeholder="email@email.com"><br><br>
+        <label for="room">Room Type</label><br>
+        <select name="room" id="room">
             <optgroup label="Room Type">
-                <option value="">Normal</option>
-                <option value="">Deluxe</option>
-                <option value="">Platinum</option>
+                <option value="normal">Normal</option>
+                <option value="deluxe">Deluxe</option>
+                <option value="platinum">Platinum</option>
             </optgroup>
-        </select><br></br>
+        </select><br><br>
 
-        <label for="">Number of Guests</label></br>
-        <input min="0" max="15" type="number"></br></br>
+        <label for="guests">Number of Guests</label><br>
+        <input id="guests" min="0" name="guests" max="15" type="number"><br><br>
 
-        <label for="">Arrival Date And Time</label></br>
-        <input type="datetime-local" min="2026-04-02"></br></br>
+        <label for="arrival">Arrival Date And Time</label><br>
+        <input id="arrival" name="arrival" type="datetime-local" min="2026-04-02"><br><br>
 
-        <lable for="">Departure Date</lable></br>
-        <input type="date" min="2026-04-03"></br></br>
+        <label for="departure">Departure Date</label><br>
+        <input id="departure" name="departure" type="date" min="2026-04-03"><br><br>
 
-        <label for="">City</label>
-        <select name="city" id="">
+        <label for="city">City</label>
+        <select name="city" id="city">
+            <option value="" disabled selected>Select City</option>
             <optgroup label="Punjab">
-                <option value="">Jalandhar</option>
-                <option value="">Amritsar</option>
-                <option value="">Ludhiana</option>
+                <option value="Jalandhar">Jalandhar</option>
+                <option value="Amritsar">Amritsar</option>
+                <option value="Ludhiana">Ludhiana</option>
             </optgroup>
-        </select></br></br>
+        </select><br><br>
 
-        <input type="checkbox">Agree to terms and conditions</br></br>
+        <textarea name="requests" placeholder="Special Requests">Special Requests</textarea><br><br>
 
-        <textarea >Special Requests</textarea>
+        <input type="checkbox" name="terms">Agree to terms and conditions<br><br>
+
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>

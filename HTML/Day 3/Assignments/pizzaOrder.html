@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header style="background-color: yellow; padding: 10px; font-weight: bold; align-content: center;">🍕Pizza Mania🍕</header>
+    <form action="">
+        <fieldset>
+            <legend>🍕Pizza Order Here🍕</legend>
+        <table border="0" cellpadding="10" cellspacing="0" width="100%">
+        
+            <tr>
+            <td><label for="first_name">First Name</label></td>
+            <td><input id="first_name" name="first_name" type="text" placeholder="First Name" ></td>
+            </tr>
+
+            <tr>
+            <td><label for="last_name">Last Name</label></td>
+            <td><input id="last_name" name="last_name" type="text" placeholder="Last Name"></td>
+            </tr>
+            
+            <tr>
+            <td><label for="email">Email</label></td>
+            <td><input id="email" name="email" type="email" placeholder="abc@example.com"></td>
+            </tr>
+
+            <tr>
+            <td><label for="contact">Contact</label></td>
+            <td><input id="contact" name="contact" type="text" placeholder="Ex:0000000000" min="1" maxlength="10"></td>
+            </tr>
+
+            <tr>
+            <td><label for="">Preferred Delivery Date</label></td>
+            <td><input type="datetime-local" name="delivery_date"></td>
+            </tr>
+        
+            <tr>
+            <td><label>Size</label></td>
+            <td><input type="radio" name="size" value="small">Small
+            <input type="radio" name="size" value="medium">Medium
+            <input type="radio" name="size" value="large">Large</td>
+            </tr>
+        
+            <tr>
+            <td><label>Order</label></td>
+            <td><select name="outlet">
+                <option value="" disabled selected>Select Outlet</option>
+                <optgroup label="Select Outlet">
+                    <option value="Jalandhar-1">Jalandhar-1</option>
+                    <option value="Jalandhar-2">Jalandhar-2</option>
+                    <option value="Jalandhar-3">Jalandhar-3</option>
+                </optgroup>
+            </select></td>
+            </tr>
+        
+            <tr>
+            <td><label>Menu</label></td>
+            <td></td>
+            </tr>
+
+            <tr>
+                <td><label>🍕</label></td>
+                <td><input type="checkbox" name="pizza" value="Hawaiian">Hawaiian(150.00 Rs. <strike>170.00</strike>)</td>
+                <td><input type="number" name="quantity_hawaiian" min="1" max="5"></td>
+            </tr>
+
+            <tr>
+                <td><label>🍕</label></td>
+                <td><input type="checkbox" name="pizza" value="Peperoni">Peperoni(140.00 Rs. <strike>160.00</strike>)</td>
+                <td><input type="number" name="quantity_peperoni" min="1" max="5"></td>
+            </tr>
+
+            <tr>
+                <td><label>🍕</label></td>
+                <td><input type="checkbox" name="pizza" value="Vegetable">Vegetable(130.00 Rs. <strike>150.00</strike>)</td>
+                <td><input type="number" name="quantity_vegi" min="1" max="5"></td>
+            </tr>
+        
+            <tr>
+                <td><label>💳</label></td>
+                <td><label>Credit Card</label></td>
+                <td><input type="text" name="card_number" min="1" maxlength="16"></td>
+                <td><button type="button" name="verify">Verify Card</button></td>
+            </tr>
+
+            <tr>
+                <td><label>🔑</label></td>
+                <td><label>Pin</label></td>
+                <td><input type="password" name="pin" maxlength="4"></td>
+            </tr>
+
+            <tr>
+                <td><label>🖼️</label></td>
+                <td><label>Upload Photo for discount</label></td>
+                <td><input type="file" name="photo"></td>
+            </tr>
+
+            <tr>
+                <td><label>🗒️</label></td>
+                <td><label>Additional Note</label></td>
+                <td><textarea name="notes" placeholder="If there is any additional requests please mention here."></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label>⭐</label></td>
+                <td><label>Rating</label></td>
+                <td><input type="range" name="rating"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>
