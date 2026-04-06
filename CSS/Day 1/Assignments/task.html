@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .about h1{
+            color: green;
+        }
+        .about p {
+            background-color: lightyellow;
+            padding: 10px;
+        }
+        .about p::first-letter{
+            color: red;
+        }
+        div h2:first-child{
+            color: green;
+        }
+        .location >ul>li{
+            color: brown;
+        }
+        .location ul ul li{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="about">
+        <h1>About</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa aliquid labore voluptate suscipit laudantium. Magnam quibusdam consequatur, nisi vero minima cupiditate consequuntur dignissimos doloribus eos quis, earum possimus, sunt aliquam.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro iure, quidem, laborum itaque aliquid, dolore rem deserunt libero voluptas animi suscipit ad? Animi, commodi porro aliquam non ut harum accusantium.
+        </p>
+    </div>
+
+    <div class="location">
+        <h2>Our Locations</h2>
+        <ul>
+            <li>USA
+                <ul>
+                    <li>New York</li>
+                    <li>Columbus</li>
+                    <li>Austin</li>
+                    <li>Philly</li>
+                </ul>
+            </li>
+            <li>World
+                <ul>
+                    <li>Ottawa</li>
+                    <li>Syndey</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="upcoming">
+        <h2>Upcoming Classess</h2>
+        <table border="2">
+            <tr>
+                <th>Location</th>
+                <th>Topic</th>
+            </tr>
+            <tr>
+                <td>New York</td>
+                <td>Java Script & jQuery</td>
+            </tr>
+            <tr>
+                <td>San Francisco</td>
+                <td>HTML & CSS</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="form">
+        <h2>Sign Up!</h2>
+        <form action="">
+            <table border="0" cellpadding="2" cellspacing="2" width="50%">
+                <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" name="name" id="name" placeholder="name"></td>
+                </tr>
+
+                <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email" placeholder="email@email.com"></td>
+                </tr>
+
+                <tr>
+                <td><label for="location">Location:</label></td>
+                <td><select name="location">
+                    <optgroup label="City">
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="New york">New York</option>
+                        <option value="Philly">Philly</option>
+                    </optgroup>
+                </select></td>
+                </tr>
+            </table>
+            <br>
+            
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" name="gender" id="male" value="male">Male
+                <input type="radio" name="gender" id="female" value="female">female
+            </fieldset>
+            <br>
+
+            <label for="note">Experience</label><br>
+            <textarea name="note" placeholder="Anything to add"></textarea><br><br>
+
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+    
+</body>
+</html>

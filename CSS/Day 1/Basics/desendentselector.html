@@ -6,13 +6,28 @@
     <title>Document</title>
     <style>
         .biryani>li{
-            background-color: orange;
+            color: orange;
         }
         h1~h1{
-            background-color: red;
+            color: grey;
         }
-        .lassi{
-            background-color: beige;
+        .chicken{
+            color:crimson;
+        }
+        .biryani>div+li{
+            color: blue;
+        }
+        .lassi>li{
+            color: green;
+        }
+        .sugar{
+            color:aqua;
+        }
+        h1:nth-of-type(2)~li{
+            color:blueviolet;
+        }
+        li:last-of-type{
+            color: brown;
         }
     </style>
 </head>
@@ -22,15 +37,15 @@
         <li>Biryani</li>
         <li>Chicken</li>
         <div>
-            <ul>
+            <ul class="chicken">
                 <li>Grilled Chicken</li>
                 <li>Fried Chicken</li>
                 <li>Roasted Chicken</li>
             </ul>
         </div>
 
-        <h1>Fighter Jet</h1>
         <li>Paneer</li>
+        <h1>Fighter Jet</h1>
         <li>Spices</li>
         <li>Gas</li>
     </ul>
@@ -39,7 +54,14 @@
         <h1>Ingredients for Lassi</h1>
         <li>Curd</li>
         <li>Sugar</li>
+        <div>
+            <ul class="sugar">
+                <li>White Sugar</li>
+                <li>Brown Sugar</li>
+            </ul>
+        </div>
         <li>Water</li>
+        <li>kova</li>
     </ul>
 </body>
 </html>
