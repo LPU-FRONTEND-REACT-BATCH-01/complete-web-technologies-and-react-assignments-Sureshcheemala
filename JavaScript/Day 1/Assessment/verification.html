@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let un = prompt("Enter username")
+        let emailId = prompt("Enter emailId")
+        let pass = prompt("Enter Password")
+        function details(un, emailId, pass){
+            function names(un){
+                return un.replaceAll(" ", "").toLowerCase()
+            }
+            
+            function emails(emailId){
+                let parts = emailId.split('@')
+                if(parts.length != 2){
+                    return "Invalid email"
+                }
+                let name = parts[0]
+                let domain = parts[1]
+
+                if(name === "" || domain === ""){
+                    return "Invalid email"
+                }
+
+                return emailId.toLowerCase()
+            }
+             function passw(pass){
+                if(pass.length < 8){
+                    return "Lenght must atleast be 8"
+                }
+                let val = "@*/"
+                for(let ch of val){
+                    if(pass.includes(ch)){
+                        return pass
+                    }
+                }
+                return "pass must contain @*/"
+            }
+            return 
+                names(un) + " " +
+                emails(emailId) + " " +
+                passw(pass)
+            
+        }
+        console.log(details(un, emailId, pass))
+    </script>
+</body>
+</html>
