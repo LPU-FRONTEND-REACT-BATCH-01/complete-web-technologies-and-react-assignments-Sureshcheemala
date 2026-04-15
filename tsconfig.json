@@ -5,6 +5,7 @@
     "moduleResolution": "node16",
     "rootDir": "./TypeScript",
     "outDir": "./dist",
+    "noEmitOnError": true,
     "strict": true
   },
   "include": ["TypeScript/**/*"],
