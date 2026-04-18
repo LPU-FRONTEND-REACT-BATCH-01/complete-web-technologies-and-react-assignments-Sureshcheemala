@@ -243,22 +243,51 @@
 
 // export default App
 
-import { useState } from "react"
-import bulbOff from "./Assests/light-bulb-off.jpg"
-import bulbOn from "./Assests/light-bulb-on.avif"
+// import { useState } from "react"
+// import bulbOff from "./Assests/light-bulb-off.jpg"
+// import bulbOn from "./Assests/light-bulb-on.avif"
+
+// const App = () => {
+//     let [isOn, setBulb] = useState(false)
+
+//     let toggle = () => {
+//         setBulb(prev => !prev)
+//     }
+
+//     console.log("Executed")
+//     return (
+//         <div>
+//             <img src= {isOn ? bulbOn : bulbOff} alt="bulb" width="200" />
+//             <button onClick={toggle}>{isOn ? "Turn off" : "Turn on"}</button>
+//         </div>
+//     )
+// }
+
+// export default App
+
+import { useEffect, useState } from "react"
 
 const App = () => {
-    let [isOn, setBulb] = useState(false)
+    let [count, setCount] = useState(0)
+    let [count1, setCount1] = useState(0)
 
-    let toggle = () => {
-        setBulb(prev => !prev)
+    let handleCount = () => {
+        setCount(prev => prev + 1)
     }
 
-    console.log("Executed")
+    let handleCount1 =() => {
+        setCount1(prev => prev + 1)
+    }
+    useEffect(() => {
+        console.log("UseEffect got Executed")
+    }, [count])
+
     return (
         <div>
-            <img src= {isOn ? bulbOn : bulbOff} alt="bulb" width="200" />
-            <button onClick={toggle}>{isOn ? "Turn off" : "Turn on"}</button>
+            <h1>{count}</h1>
+            <h1>Count1: {count1}</h1>
+            <button onClick={handleCount}>count</button>
+            <button onClick={handleCount1}>count1</button>
         </div>
     )
 }
