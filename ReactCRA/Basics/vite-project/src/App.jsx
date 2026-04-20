@@ -244,8 +244,8 @@
 // export default App
 
 // import { useState } from "react"
-// import bulbOff from "./Assests/light-bulb-off.jpg"
-// import bulbOn from "./Assests/light-bulb-on.avif"
+// import bulbOff from "./assests/light-bulb-off.jpg"
+// import bulbOn from "./assests/light-bulb-on.avif"
 
 // const App = () => {
 //     let [isOn, setBulb] = useState(false)
@@ -265,30 +265,43 @@
 
 // export default App
 
-import { useEffect, useState } from "react"
+// import { useEffect, useState } from "react"
+
+// const App = () => {
+//     let [count, setCount] = useState(0)
+//     let [count1, setCount1] = useState(0)
+
+//     let handleCount = () => {
+//         setCount(prev => prev + 1)
+//     }
+
+//     let handleCount1 =() => {
+//         setCount1(prev => prev + 1)
+//     }
+//     useEffect(() => {
+//         console.log("UseEffect got Executed")
+//     }, [count])
+
+//     return (
+//         <div>
+//             <h1>{count}</h1>
+//             <h1>Count1: {count1}</h1>
+//             <button onClick={handleCount}>count</button>
+//             <button onClick={handleCount1}>count1</button>
+//         </div>
+//     )
+// }
+
+// export default App
+
+import Controlled from "./Components/Day 3/Controlled"
+import FetchingData from "./Components/Day 3/FetchingData"
 
 const App = () => {
-    let [count, setCount] = useState(0)
-    let [count1, setCount1] = useState(0)
-
-    let handleCount = () => {
-        setCount(prev => prev + 1)
-    }
-
-    let handleCount1 =() => {
-        setCount1(prev => prev + 1)
-    }
-    useEffect(() => {
-        console.log("UseEffect got Executed")
-    }, [count])
-
+    
     return (
-        <div>
-            <h1>{count}</h1>
-            <h1>Count1: {count1}</h1>
-            <button onClick={handleCount}>count</button>
-            <button onClick={handleCount1}>count1</button>
-        </div>
+        // <FetchingData/>
+        <Controlled/>
     )
 }
 
