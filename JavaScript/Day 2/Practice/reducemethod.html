@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cartData = [
+            {
+                id:1,
+                name:"watch",
+                price: 2999,
+                quantity: 2
+            },
+            {  
+                id:2,
+                name:"Shoes",
+                price: 199,
+                quantity: 5
+            },
+            {
+                id:3,
+                name:"Earphones",
+                price: 299,
+                quantity: 10
+            }
+        ]
+
+        let cartValue = cartData.reduce((initial_value, cart_product) => {
+            return initial_value + (cart_product.price * cart_product.quantity)
+        },0)
+
+        console.log(cartValue)
+    </script>
+</body>
+</html>
